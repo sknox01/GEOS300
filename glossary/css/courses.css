@@ -1,0 +1,26 @@
+<style type="text/css">
+
+body {margin-top:0px; margin-bottom:10px; margin-left:0px; margin-right:0px; }
+p, ul, ol, li, div, td, th, blockquote, nobr, b, i
+           {color:#444444; font-family:verdana, geneva, arial; font-size:10pt;line-height:20px;}
+h1 {color:black; font-weight: 200; font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue; Helvetica, Sans-serif
+   font-size:30px; padding:0px; margin:0px; line-height:0px}
+h2, h3, h4 {color:gray; padding:0px; margin-bottom:20px; margin-top:20px; font-weight: 200; font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue; Helvetica, Sans-serif; font-size:15px;line-height:20px;}
+*.caption  {color:#444444; font-family:verdana, geneva, arial; font-size:8pt;line-height:14px;}
+       
+p.ubc {vertical-align:top; text-align:left; border-bottom-width:1px; border-bottom-style:solid;border-bottom-color:gray;empty-cells:show;padding:0px}
+p.theader {color:#444444; font-weight:bold}
+          
+td.schedule {vertical-align:top; text-align:left; border-bottom-width:1px; border-bottom-style:solid;border-bottom-color:gray;empty-cells:show;padding:5px}
+td.scheduleend {vertical-align:top; text-align:left; border-bottom-width:0px;empty-cells:show;padding:5px}
+th.schedule {vertical-align:top; text-align:left; border-bottom-width:1px; border-bottom-style:solid;border-bottom-color:gray;padding:5px}
+    
+td.schedule_week {vertical-align:top; text-align:left; border-top-width:1px; border-top-style:solid;border-bottom-color:gray;empty-cells:show;padding:5px}
+th.schedule_week {vertical-align:top; text-align:left; border-top-width:1px; border-top-style:solid;border-bottom-color:gray;padding:5px}
+
+a:link     {color:#330099; font-family:verdana, geneva, arial; text-decoration:none;}
+a:visited  {color:#330099; font-family:verdana, geneva, arial; text-decoration:none;}
+a:active   {color:#0000FF; font-family:verdana, geneva, arial; text-decoration:none;}
+a:hover    {color:#0000FF; font-family:verdana, geneva, arial; text-decoration:none;}
+
+</style>
