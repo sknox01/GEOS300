@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+\author{Andreas Christen}
+
+% settings ========================================================
+
+\usepackage{graphicx}        % graphics
+\usepackage{tabularx}        % enhances table layout
+\usepackage{titlesec}        % allows customizing header properties
+\usepackage{color}
+
+%font settings ====================================================
+
+\titleformat{\section}
+{\bfseries\filcenter\Large}{\thesection}{1em}{} 
+
+\titleformat{\subsection}
+{\scshape\filcenter}{\thesubsection}{1em}{}
+
+\titleformat{\paragraph}[runin] 
+{\normalfont\bfseries} 
+{\paragraph.}{.5em}{}[.] 
+
+%lesson numbering =================================================
+
+\begin{document}
+
+\begin{center}
+\emph{University of British Columbia, Vancouver}\\
+GEOB 300 - Microscale Weather and Climate\\
+Knox, \today
+\section*{Answers to Study Questions - Lecture 5}
+
+\vspace{0.5cm}
+\end{center}
+
+\begin{enumerate}
+
+\item (a) The highest yearly total $K_{Ex}$ (extraterrestrial irradiance) is found at the Equator ($\theta = 0^{\circ}$) with $13.2\,\rm{GJ}\,\rm{m}^{-2}\,\rm{year}^{-1}$. This means that there is an energy gradient from the Equator to the Poles (lowest input with $5.5\,\rm{GJ}\,\rm{m}^{-2}\,\rm{year}^{-1}$ at the Poles $\theta = 90^{\circ}$) that creates a global circulation exchanging energy from low to high latitudes (ocean currents, general atmospheric circulation).\\
+(b) The highest daily total $K_{Ex}$ is found at the poles with $47$ $\,\rm{MJ}\,\rm{m}^{-2}\,$ $\rm{day}^{-1}$ during the summer solstice. This is because the solar irradiance reaches the poles during the full 24h cycle.\\
+(c) For Vancouver, the highest instantaneous $K_{Ex} \approx 1190\,\rm{W}\,\rm{m}^{-2}$ is found on the day of the summer solstice (Jun 22) at 12 LAT. The lowest value ($0\,\rm{W}\,\rm{m}^{-2}$) during any night. \\
+
+\item Using the energy conservation equation (reading package, equation 2.12) we know that radiation of wavelength $\lambda$ incident upon a substance must either be \emph{transmitted} through it, be \emph{reflected} from its surface, or be \emph{absorbed}: 
+\begin{eqnarray}
+\Psi_{\lambda} + \alpha_{\lambda} + \zeta_{\lambda} = 1
+\label{E1}
+\end{eqnarray}
+If the body is opaque, then $\Psi_{\lambda} = 0$ and:
+\begin{eqnarray}
+\alpha_{\lambda} + \zeta_{\lambda} &=& 1 \nonumber \\
+\alpha_{\lambda} &=& 1 - \zeta_{\lambda}
+\end{eqnarray}
+so the reflectivity is $\alpha_{\lambda} = 1 - 0.75 = \underline{0.25}$.
+
+\item We use Equation (\ref{E1}) and solve for absorptivity:
+\begin{eqnarray}
+\zeta_{\rm{PAR}} = 1 - (\Psi_{\rm{PAR}} + \alpha_{\rm{PAR}})
+\label{E3}
+\end{eqnarray}
+This results in $\zeta_{\rm{PAR}} = 1 - (0.08 + 0.11) = 0.81$. Hence, the fraction of the incident radiation of $800\,\mu \rm{mol}\,\rm{s}^{-1}\,\rm{m}^{-2}$ that is absorbed is 81\%:
+\begin{eqnarray*}
+0.81 \times 800\,\mu \rm{mol}\,\rm{s}^{-1}\,\rm{m}^{-2} = \underline{648\,\mu \rm{mol}\,\rm{s}^{-1}\,\rm{m}^{-2}}
+\end{eqnarray*}
+
+\item We use the bulk transfer formula from Lecture 5 and rearrange for the transmissivity $\Psi_a$:
+\begin{eqnarray}
+K_{\downarrow} &=& K_{Ex} \Psi_a^m \\
+\Psi_a &=& \left( \frac{K_{\downarrow}}{K_{Ex}} \right) ^{\frac{1}{m}}
+\label{E4}
+\end{eqnarray}
+$K_{Ex}$ has been calculated for the same time and location in the Study Question Set 4 (Question 5) and is $K_{Ex} = 562 \,\rm{W}\,\rm{m}^{-2}$ (for the calculation see Answers of Study Question Set 4). We further need the optical air mass number $m$ which is:
+\begin{eqnarray}
+m = \frac{1}{\cos Z} = \frac{1}{\sin \beta}
+\end{eqnarray}
+we use $\beta = 22.40^{\circ}$ and $\sin \beta = 0.381$ from Study Question Set 4, Question 4 and get $m$ = 2.62. We insert this in Equation (\ref{E4}):
+\begin{eqnarray}
+\Psi_a &=& \left( \frac{298\,\rm{W}\,\rm{m}^{-2}}{534\,\rm{W}\,\rm{m}^{-2}} \right) ^{\frac{1}{2.62}} = \underline{0.80}
+\end{eqnarray}
+
+\item We use  $\Psi_a = 0.80$ from Question 4 and solve the bulk transfer formula:
+\begin{eqnarray}
+K_{\downarrow} &=& K_{Ex} \Psi_a^m
+\end{eqnarray}
+$K_{Ex}$ at 10:00 is calculated according to the procedure in Study Question Set 4 and is $474 \,\rm{W}\,\rm{m}^{-2}$, and the optical air mass number is $m = 2.96$ ($Z = 70.24^{\circ}$), hence:
+\begin{eqnarray}
+K_{\downarrow} &=& 474 \,\rm{W}\,\rm{m}^{-2} \times 0.80^{2.96} = \underline{245 \,\rm{W}\,\rm{m}^{-2}}
+\end{eqnarray}
+\end{enumerate}
+\end{document}

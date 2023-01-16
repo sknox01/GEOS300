@@ -1,0 +1,87 @@
+ \documentclass[11pt]{article}
+\author{Andy Black and Andreas Christen}
+
+% settings ========================================================
+
+\usepackage{graphicx}        % graphics
+\usepackage{tabularx}        % enhances table layout
+\usepackage{titlesec}        % allows customizing header properties
+
+%font settings ====================================================
+
+\titleformat{\section}
+{\bfseries\filcenter\Large}{\thesection}{1em}{} 
+
+\titleformat{\subsection}
+{\scshape\filcenter}{\thesubsection}{1em}{}
+
+\titleformat{\paragraph}[runin] 
+{\normalfont\bfseries} 
+{\paragraph.}{.5em}{}[.] 
+
+%lesson numbering =================================================
+
+\begin{document}
+
+\begin{center}
+\emph{University of British Columbia, Vancouver}\\
+GEOB 300 - Microscale Weather and Climate\\
+Knox, \today
+\section*{Answers to Study Questions - Lecture 11}
+\end{center}
+
+\begin{enumerate}
+
+\item Assume a uniform and linear warming rate of the soil:
+\begin{eqnarray*} 
+\frac{\Delta T}{\Delta t}&=& \frac{25.3^{\circ}\rm{C} - 24.8^{\circ}\rm{C}}{1\,\rm{h}} \\
+&=& 0.5\rm{K}\,\rm{h}^{-1} = 1.38 \times 10^{-4}\rm{K}\,\rm{s}^{-1} 
+\end{eqnarray*} 
+The heat flux at the surface $Q_{G(\rm{0})}$ is (Lecture 11, Slide 10):
+\begin{eqnarray*} 
+Q_{G(\rm{0})} &=& Q_{G(\rm{5cm})} + C\, \frac{\Delta T}{\Delta t} \Delta z \\
+&=& 25,\rm{W}\,\rm{m}^{-2} + 2 \,\rm{MJ}\,\rm{m}^{-3}\,\rm{K}^{-1}\, \times 1.38 \times 10^{-4}\rm{K}\,\rm{s}^{-1}  \times 0.05\,\rm{m} \\
+&=& 25\,\rm{W}\,\rm{m}^{-2} + 13.8\,\rm{W}\,\rm{m}^{-2} \\
+&=& \underline{38.8\,\rm{W}\,\rm{m}^{-2}} \\
+\end{eqnarray*} 
+\item Now we have a cooling rate (i.e. negative change of temperature over time):
+\begin{eqnarray*} 
+\frac{\Delta T}{\Delta t}&=& \frac{7.0^{\circ}\rm{C} - 7.5^{\circ}\rm{C}}{1\,\rm{h}} \\
+&=& -0.5\rm{K}\,\rm{h}^{-1} = -1.38 \times 10^{-4}\rm{K}\,\rm{s}^{-1} 
+\end{eqnarray*} 
+Similar to the first example, the heat flux at the surface is:
+\begin{eqnarray*} 
+Q_{G(\rm{0})} &=& Q_{G(\rm{5cm})} + C\, \frac{\Delta T}{\Delta t} \Delta z \\
+&=& -12\,\rm{W}\,\rm{m}^{-2} + 2 \,\rm{MJ}\,\rm{m}^{-3}\,\rm{K}^{-1}\, \times \left( -1.38 \times 10^{-4}\rm{K}\,\rm{s}^{-1} \right) \times 0.05\,\rm{m} \\
+&=& -12\,\rm{W}\,\rm{m}^{-2} + (-13.88\,\rm{W}\,\rm{m}^{-2})  \\
+&=& \underline{-25.9\,\rm{W}\,\rm{m}^{-2}} \\
+\end{eqnarray*} 
+
+\item Heat sharing refers to how the soil and the atmosphere (or two other materials) share
+in accepting sensible heat (i.e. $Q^{*}$ - $Q_{E}$) during the
+daytime and share in releasing it at night. Heat sharing is determined by the ratio of the thermal admittances of the two materials (Lecture 11, slides 27):
+\begin{eqnarray*} 
+\frac{Q_H}{Q_G} &=& \frac{\mu_a}{\mu_s}
+\end{eqnarray*} 
+where $\mu_s$ is the thermal admittance of the soil and $\mu_a$ is the thermal admittance of the atmosphere.
+
+\item Rearrange the heat sharing equation from Question 3:
+\begin{eqnarray*} 
+Q_H &=& Q_G \times \frac{\mu_a}{\mu_s} 
+\end{eqnarray*} 
+We can calculate $\mu_s$ by:
+\begin{eqnarray*} 
+\mu_s &=& \sqrt{k\,C} \\
+ &=& \sqrt{0.27\,\rm{W}\,\rm{m}^{-1}\,\rm{K}^{-1} \times 2 \times 10^{6} \,\rm{J}\,\rm{m}^{-3}\,\rm{K}^{-1}} \\
+ &=& 735 \,\rm{J} \,\rm{m}^{-2} \,\rm{K}^{-1} \,\rm{s}^{-1/2}
+\end{eqnarray*} 
+Hence:
+\begin{eqnarray*} 
+Q_H &=& Q_G \times \frac{\mu_a}{\mu_s} \\
+&=& 38.8\,\rm{W}\,\rm{m}^{-2} \times \frac{5000 \,\rm{J} \,\rm{m}^{-2} \,\rm{K}^{-1} \,\rm{s}^{-1/2}}{735 \,\rm{J} \,\rm{m}^{-2} \,\rm{K}^{-1} \,\rm{s}^{-1/2}} \\
+&=& \underline{264\,\rm{W}\,\rm{m}^{-2}}
+\end{eqnarray*} 
+
+\end{enumerate}
+
+\end{document}

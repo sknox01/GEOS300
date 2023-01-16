@@ -1,0 +1,57 @@
+\documentclass[11pt]{article}
+\author{Andreas Christen}
+
+% settings ========================================================
+
+\usepackage{graphicx}        % graphics
+\usepackage{tabularx}        % enhances table layout
+\usepackage{titlesec}        % allows customizing header properties
+
+%font settings ====================================================
+
+\titleformat{\section}
+{\bfseries\filcenter\Large}{\thesection}{1em}{} 
+
+\titleformat{\subsection}
+{\scshape\filcenter}{\thesubsection}{1em}{}
+
+\titleformat{\paragraph}[runin] 
+{\normalfont\bfseries} 
+{\paragraph.}{.5em}{}[.] 
+
+%lesson numbering =================================================
+
+\begin{document}
+
+\begin{center}
+\emph{University of British Columbia, Vancouver}\\
+GEOS 300 - Microscale Weather and Climate\\
+Knox
+\section*{Study Questions - Lecture 2}
+\end{center}
+
+
+
+Let us write the general conservation equation for humidity in the air:
+
+\begin{equation}
+0 = \frac{\partial \rho_v}{\partial t} + u \frac{\partial \rho_v}{\partial x} + v \frac{\partial \rho_v}{\partial y} + w \frac{\partial \rho_v}{\partial z} 
+\end{equation}
+
+where $\rho_v$ is vapour density (same as absolute humidity). For the purpose of this set of questions, we assume there is no condensation or vaporization happening.
+
+\vspace{0.5cm}
+
+\begin{enumerate}
+
+\item What does the term $\frac{\partial \rho_v}{\partial t} $ describe, and what is the unit of the term?
+
+\item What does the term $u \frac{\partial \rho_v}{\partial x}  $ describe, and what is the unit of the term?
+
+\item Assume horizontally homogeneous conditions, and $\frac{\partial \rho_v}{\partial z} = -1\,\rm{g}\,\rm{m}^{-3}\,\rm{m}^{-1}$. $u =  2\,\rm{m}\,\rm{s}^{-1}$, $v =  0\,\rm{m}\,\rm{s}^{-1}$ and $w = 0.1 \,\rm{m}\,\rm{s}^{-1}$  Is the air drying out, becoming more humid, or is the humidity staying constant?
+
+\end{enumerate}
+
+\noindent
+
+\end{document}

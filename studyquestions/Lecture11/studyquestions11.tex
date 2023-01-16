@@ -1,0 +1,47 @@
+ \documentclass[11pt]{article}
+\author{Andy Black and Andreas Christen}
+
+% settings ========================================================
+
+\usepackage{graphicx}        % graphics
+\usepackage{tabularx}        % enhances table layout
+\usepackage{titlesec}        % allows customizing header properties
+
+%font settings ====================================================
+
+\titleformat{\section}
+{\bfseries\filcenter\Large}{\thesection}{1em}{} 
+
+\titleformat{\subsection}
+{\scshape\filcenter}{\thesubsection}{1em}{}
+
+\titleformat{\paragraph}[runin] 
+{\normalfont\bfseries} 
+{\paragraph.}{.5em}{}[.] 
+
+%lesson numbering =================================================
+
+\begin{document}
+
+\begin{center}
+\emph{University of British Columbia, Vancouver}\\
+GEOB 300 - Microscale Weather and Climate\\
+Knox\\
+\today
+
+\section*{Study Questions - Lecture 11}
+\end{center}
+
+\begin{enumerate}
+
+\item At 11:30 in the morning, we measure a soil heat flux density $Q_{G(\rm{5cm})}$ of $25\,\rm{W}\,\rm{m}^{-2}$ using a heat flux plate installed at 5 cm depth. Calculate the soil heat flux density at the surface $Q_{G(\rm{0})}$, if the soil's heat capacity in the layer from 0 to 5 cm depth is $2 \,\rm{MJ}\,\rm{m}^{-3}\,\rm{K}^{-1}$ and the temperature in the same layer changed from 24.8$^{\circ}\rm{C}$ at 11:00 to 25.3$^{\circ}\rm{C}$ at 12:00.
+
+\item For the same soil, at 20:30 in the evening, we measure a soil heat flux density $Q_{G(\rm{5cm})}$ of $-12\,\rm{W}\,\rm{m}^{-2}$. Calculate the soil heat flux density at the surface $Q_{G(\rm{0})}$, if the temperature in the layer from 0 to 5 cm depth changed from 7.5 at 20:00 to 7.0$^{\circ}\rm{C}$ at 21:00.
+
+\item What is meant by ``heat sharing''?
+
+\item Calculate the sensible heat flux $Q_H$ at 11:30 for the example in Question 1, if the soil's thermal conductivity is $k = 0.27\,\rm{W}\,\rm{m}^{-1}\,\rm{K}^{-1}$ and the atmospheric thermal admittance $\mu_a$ is $\approx 5000 \,\rm{J} \,\rm{m}^{-2} \,\rm{K}^{-1} \,\rm{s}^{-1/2}$.
+
+\end{enumerate}
+
+\end{document}

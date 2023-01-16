@@ -1,0 +1,101 @@
+ \documentclass[11pt]{article}
+\author{Andy Black and Andreas Christen}
+
+% settings ========================================================
+
+\usepackage{graphicx}        % graphics
+\usepackage{tabularx}        % enhances table layout
+\usepackage{titlesec}        % allows customizing header properties
+
+%font settings ====================================================
+
+\titleformat{\section}
+{\bfseries\filcenter\Large}{\thesection}{1em}{} 
+
+\titleformat{\subsection}
+{\scshape\filcenter}{\thesubsection}{1em}{}
+
+\titleformat{\paragraph}[runin] 
+{\normalfont\bfseries} 
+{\paragraph.}{.5em}{}[.] 
+
+%lesson numbering =================================================
+
+\begin{document}
+
+\begin{center}
+\emph{University of British Columbia, Vancouver}\\
+GEOG 300 - Microscale Weather and Climate\\
+Knox
+\section*{Study Questions - Lecture 18}
+\end{center}
+
+\begin{enumerate}
+
+\item During an hour, you measure air temperature $T$ every 10 minutes according the table below. Calculate the following terms:
+
+\begin{center}
+\begin{tabular}{|l|r|}
+\hline
+Minutes & $T$ \\
+\hline
+10 & $12.6^{\circ}\textrm{C}$ \\
+\hline
+20 & $11.2^{\circ}\textrm{C}$ \\
+\hline
+30 & $11.9^{\circ}\textrm{C}$ \\
+\hline
+40 & $13.1^{\circ}\textrm{C}$ \\
+\hline
+50 & $12.0^{\circ}\textrm{C}$ \\
+\hline
+60 & $11.8^{\circ}\textrm{C}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.2cm}
+\begin{tabular}{lll}
+(a) $\overline{T}$ & \hspace{1cm} & (d) $\overline{T^{\prime}}$  \\
+\vspace{0.1cm}\\
+(b) $T^{\prime}$ at 40 min & \hspace{1cm} &  (e) $\overline{T^{\prime 2}}$  \\
+\vspace{0.1cm}\\
+(c)  $T^{\prime 2}$ at 20 min  & \hspace{1.94cm} &  (f) $\overline{T^{\prime}}^2$ \\
+\end{tabular}
+\vspace{0.2cm}
+
+\item Simplify the following terms. $T$ is temperature, $p$ is pressure, $q$ is absolute humidity, $u$, $v$, $w$ are the longitudinal, lateral and vertical wind components.
+
+\vspace{0.2cm}
+\begin{tabular}{lll}
+(a) $\overline{5}$  & \hspace{3cm} & (f) $\overline{T^{\prime}} \times \overline{w}$  \\
+\vspace{0.1cm}\\
+(b) $\overline{8v}$   & \hspace{3cm} &  (g) $\overline{3q^{\prime}}$  \\
+\vspace{0.1cm}\\
+(c) $\overline{\overline{T}\overline{p}}$  & \hspace{3cm} &  (h) $\overline{w^{\prime} \times \overline{u}}$ \\
+\vspace{0.1cm}\\
+(d) $\overline{\overline{u}}$  & \hspace{3cm} &  (i) $\overline{\overline{T}p}$ \\
+\vspace{0.1cm}\\
+(e) $\overline{q^{\prime}}$  & \hspace{3cm} &  (j) $\overline{wT}$ \\
+\end{tabular}
+\vspace{0.2cm}
+
+\newpage
+
+\item Calculate the following parameters if $\overline{u} = 4\, \textrm{m}\, \textrm{s}^{-1}$, $\overline{v} = 0\, \textrm{m}\, \textrm{s}^{-1}$, $\overline{w} = 0\, \textrm{m}\, \textrm{s}^{-1}$, $\sigma_u = 0.4\, \textrm{m}\, \textrm{s}^{-1}$, $\sigma_v = 0.2\, \textrm{m}\, \textrm{s}^{-1}$, and $\sigma_w = 0.1\, \textrm{m}\, \textrm{s}^{-1}$.
+
+\vspace{0.2cm}
+\begin{tabular}{lll}
+(a) $I_u$   & \hspace{3.7cm} & (d) $\overline{u^{\prime 2}} + \overline{v^{\prime 2}} + \overline{w^{\prime 2}}$  \\
+\vspace{0.1cm}\\
+(b) $I_w$   & \hspace{3cm} &  (e) MKE/m  \\
+\vspace{0.1cm}\\
+(c) $\overline{w^{\prime 2}}$  & \hspace{3cm} &  (f) $\overline{e}$ \\
+\end{tabular}
+\vspace{0.2cm}
+
+\end{enumerate}
+
+\noindent
+
+\end{document}

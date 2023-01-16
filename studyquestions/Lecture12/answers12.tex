@@ -1,0 +1,94 @@
+ \documentclass[11pt]{article}
+\author{Andy Black and Andreas Christen}
+
+% settings ========================================================
+
+\usepackage{graphicx}        % graphics
+\usepackage{tabularx}        % enhances table layout
+\usepackage{titlesec}        % allows customizing header properties
+\usepackage{color}
+
+%font settings ====================================================
+
+\titleformat{\section}
+{\bfseries\filcenter\Large}{\thesection}{1em}{} 
+
+\titleformat{\subsection}
+{\scshape\filcenter}{\thesubsection}{1em}{}
+
+\titleformat{\paragraph}[runin] 
+{\normalfont\bfseries} 
+{\paragraph.}{.5em}{}[.] 
+
+%lesson numbering =================================================
+
+\begin{document}
+
+\begin{center}
+\emph{University of British Columbia, Vancouver}\\
+GEOB 300 - Microscale Weather and Climate\\
+Knox\\
+\today
+\section*{Answers to Study Questions - Lecture 12}
+\end{center}
+
+\begin{enumerate}
+
+\item (a) The soil temperature wave's amplitude decreases exponentially with depth $z$. Its phase lag
+increases linearly with depth $z$. (b) Increasing organic matter content means that $\kappa = k/C$ is decreasing ($k$ of organic material is lower and $C$ is higher, see lecture 10). Therefore, with increasing organic matter content the amplitude
+decreases more rapidly with depth and that the phase lag increases more rapidly with depth. Please see also the effect of organic matter on the soil temperature waves by exploring the interactive web-applet in lecture 12.
+
+\item The angular frequency $\omega$ (in s$^{-1}$) is defined by $\omega = 2 \pi / P$, where $P$ is the Period (duration) of a full cycle of the wave. To get $\omega_d$, plug-in the number of seconds per day into the period $P$:
+\begin{eqnarray*} 
+\omega_d = \frac{2 \pi}{P} = \frac{2 \pi}{60 \times 60 \times 24\,\rm{s}} =  \underline{7.27 \times 10^{-5}\,\rm{s}^{-1}}
+\end{eqnarray*} 
+To get $\omega_a$, plug-in the number of seconds per (average) year into the period $P$:
+\begin{eqnarray*} 
+\omega_a = \frac{2 \pi}{P} = \frac{2 \pi}{60 \times 60 \times 24 \times 365.25 \,\rm{s}} =  \underline{1.99 \times 10^{-7}\,\rm{s}^{-1}}
+\end{eqnarray*} 
+
+\item The daily damping depth $D_d$ is defined by:
+\begin{eqnarray*} 
+D_d &=& \sqrt{\frac{2 \kappa}{\omega_d}} = \sqrt{\frac{2 \times 5.0 \times 10^{-7}\,\rm{m}^2\,\rm{s}^{-1}}{7.27 \times 10^{-5}\,\rm{s}^{-1}}} \\
+&=&\sqrt{0.013\,\rm{m}^{2}} = 0.11\,\rm{m} = \underline{11\,\rm{cm}}
+\end{eqnarray*} 
+At 11 cm, the daily soil temperature wave has decayed to $37\%$ of the amplitude of the surface temperature wave.
+The same for the annual damping depth $D_a$:
+\begin{eqnarray*} 
+D_a &=& \sqrt{\frac{2 \kappa}{\omega_d}} = \sqrt{\frac{2 \times 5.0 \times 10^{-7}\,\rm{m}^2\,\rm{s}^{-1}}{1.99 \times 10^{-7}\,\rm{s}^{-1}}} \\
+&=&\sqrt{5.03\,\rm{m}^{2}} = \underline{2.2\,\rm{m}}
+\end{eqnarray*} 
+At 2.2 m the annual soil temperature wave has decayed to $37\%$ of the amplitude of the surface temperature wave. This means annual temperature changes are still found in deeper soil layers where diurnal waves are not detectable anymore.
+
+\item The time lag between the sinusoidal temperature waves in two different depths is $\Delta t_m$. This can be practically defined by the difference in the timing of their corresponding maxima or minima temperatures (Lecture 12, Slides 15):
+\begin{eqnarray*} 
+\Delta t_m &=& t_{m_2} - t_{m_1} = (z_2 - z_1) \left( \frac{1}{2 \omega_d \kappa} \right)^{1/2}
+\end{eqnarray*} 
+If the temperature maxima occurred at 13:00 at the surface, then the temperature maximum at 5 cm depth will occur at 13:00 + $\Delta t_m$:
+\begin{eqnarray*} 
+\Delta t_m &=& (0.05\,\rm{m} - 0\,\rm{m}) \times \left( \frac{1}{2 \times 7.27 \times 10^{-5}\,\rm{s}^{-1} \times 5 \times 10^{-7}\,\rm{m}^2\,\rm{s}^{-1}} \right)^{1/2} \\
+&=& 5864\,\rm{s} = 1.6 \, \rm{h}
+\end{eqnarray*} 
+So the temperature maximum at 5 cm depth will occur at 13:00 + 01:38 = \underline{14:38}.
+
+\item Solve the formula in Question 4 ($\Delta t_m = 3\,\rm{h} = (z_2 - z_1) \sqrt{1/(2 \omega \kappa_s)}$) for soil thermal diffusivity $\kappa$ and use the angular frequency of the diurnal wave $\omega_d$:
+\begin{eqnarray*} 
+\kappa &=& (2 \omega_d)^{-1} \times (z_2-z_1)^{2} \times (\Delta t )^{-2} \\
+&=& (2 \times 7.27 \times 10^{-5}\,\textrm{s}^{-1})^{-1} \times (0.1 \textrm{m})^{2} \times (10800 \textrm{s})^{-2} \\
+&=& 6878\, \textrm{s} \times 0.01\, \textrm{m}^{2} \times 8.57 \times 10^{-9}\, \textrm{s}^{-2} \\
+&=& \underline{5.9 \times 10^{-7} \textrm{m}^2\, \textrm{s}^{-1}}
+\end{eqnarray*}
+
+\item Mineral soils have deeper penetration of temperature waves,
+higher average temperatures and smaller temperature variations at
+the surface.
+
+%\item For the soil in Question 4,
+%\begin{eqnarray*} 
+%\overline{T}(z,t) = \overline{T_o} + \Delta T_0 \times  \exp \left[ -z \left( \frac{\omega_d}{2 \kappa} \right) ^{1/2} \right] \times  \sin \left[ \omega_d\,t - \left( \frac{\omega_d}{2 \kappa} \right)^{1/2} z \right]
+%\end{eqnarray*}
+
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,57 @@
+\documentclass[11pt]{article}
+\author{Andreas Christen}
+
+% settings ========================================================
+
+\usepackage{graphicx}        % graphics
+\usepackage{tabularx}        % enhances table layout
+\usepackage{titlesec}        % allows customizing header properties
+\usepackage{color}
+
+%font settings ====================================================
+
+\titleformat{\section}
+{\bfseries\filcenter\Large}{\thesection}{1em}{} 
+
+\titleformat{\subsection}
+{\scshape\filcenter}{\thesubsection}{1em}{}
+
+\titleformat{\paragraph}[runin] 
+{\normalfont\bfseries} 
+{\paragraph.}{.5em}{}[.] 
+
+%lesson numbering =================================================
+
+\begin{document}
+
+\begin{center}
+\emph{University of British Columbia, Vancouver}\\
+GEOS 300 - Microscale Weather and Climate\\
+Knox, updated \today
+\section*{Answers to Study Questions - Lecture 2}
+
+\vspace{0.5cm}
+\end{center}
+
+\begin{enumerate}
+
+\item The term $\frac{\partial \rho_v}{\partial t} $ describes the change in absolute humidity $\partial \rho_v$ in time $\partial t$ and as such is the \underline{change in storage} within the `volume'. Its unit is partial density of water vapour ($\rm{g}\,\rm{m}^{-3}$) divided by time (in $\rm{s}$), i.e. \underline{$\rm{g}\,\rm{m}^{-3}\,\rm{s}^{-1}$}
+
+\item The term $u \frac{\partial \rho_v}{\partial x}$ describes \underline{transport} of a humidity gradient along the $x$-axis by the wind. Its unit is wind speed ($\rm{m}\,\rm{s}^{-1}$) times partial density of water vapour ($\rm{g}\,\rm{m}^{-3}$) divided by distance (in $\rm{m}$), i.e. again \underline{$\rm{g}\,\rm{m}^{-3}\,\rm{s}^{-1}$}
+
+\item Horizontally homogeneous conditions mean $\frac{\partial \rho_v}{\partial x} = 0$ and $\frac{\partial \rho_v}{\partial y} = 0$. So the conservation equation simplifies to:
+\begin{equation}
+0 = \frac{\partial \rho_v}{\partial t} + w \frac{\partial \rho_v}{\partial z} 
+\end{equation}
+or 
+\begin{equation}
+\frac{\partial \rho_v}{\partial t} = - w \frac{\partial \rho_v}{\partial z} 
+\end{equation}
+Inserting $\frac{\partial \rho_v}{\partial z} = -1\,\rm{g}\,\rm{m}^{-3}\,\rm{m}^{-1}$ and $w = 0.1 \,\rm{m}\,\rm{s}^{-1}$ results in:
+\begin{equation}
+\frac{\partial \rho_v}{\partial t} = 0.1\,\rm{g}\,\rm{m}^{-3}\,\rm{s}^{-1}.
+\end{equation}
+So the `volume' becomes more humid over time.
+
+\end{enumerate}
+\end{document}
