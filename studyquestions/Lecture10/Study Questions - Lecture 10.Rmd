@@ -1,0 +1,107 @@
+---
+title: "Study Questions - Lecture 10"
+author: "Your name here"
+date: "2023-02-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# <center>University of British Columbia, Vancouver</center> 
+## <center>GEOB 300 - Microscale Weather and Climate</center>  
+### <center>Student Name, Student ID</center> 
+```
+
+Q1. The specific heat of water is cp = 4.18 kJ kg−1 K−1. Calculate the heat capacity C of water.
+
+
+```{r}
+
+```
+
+Q2. Calculate the heat capacity C of a dry mineral soil with a porosity of 55%. Use values from the table in Lecture 10, Slide 8.
+
+
+```{r}
+
+```
+
+Q3. Calculate the heat capacity C for the same soil if it is completely saturated.
+
+
+```{r}
+
+```
+
+Q4. Calculate the heat capacity C of a partly saturated soil with P = 50%, θa = 0.30 and an organic to mineral ratio of 1.5. Again, use the table in Lecture 10, Slide 8.
+
+
+```{r}
+
+```
+
+Q5. If you increase the soil volumetric water content θw of any soil by 0.1, how does the heat capacity C of the soil change?
+
+
+```{r}
+
+```
+
+Q6. Assume we have a soil with C = 2MJm−3 K−1 and we measure a soil heat flux density QG of +100 W m−2 all going to the first 10 cm of the soil, how fast would the layer 0-10 cm heat up?
+
+
+```{r}
+
+```
+
+Q7. Write Fourier’s law and explain it briefly.
+
+
+```{r}
+
+```
+
+Q8. In a dry and uniform mineral soil with a porosity of 55%, we measure soil temperatures T1 at 2cm and T2 at 6cm. T1 =20◦C,T2 = 18.5◦C. Calculate the soil heat flux density QG assuming a thermal conductivity of k = 0.27 W m−1 K−1.
+
+
+```{r}
+
+```
+
+Q9. At 5 cm depth we measure a soil heat flux density QG = 20 W m−2 and simultaneously a temperature gradient of -0.5 Kcm−1. Calculate the thermal conductivity k.
+
+
+```{r}
+
+```
+
+Q10. For a soil with a specific heat cp = 1.8 kJ kg−1 K−1, a density ρ = 1.4 Mg m−3, and a thermal conductivity k = 0.4 W m−1 K−1, calculate the thermal diffusivity κ.
+
+
+```{r}
+
+```
+
+Q11. Calculate the thermal admittance μ for the same soil.
+
+
+```{r}
+
+```
+
+Q12. Assume we know a soil’s dry mass fraction of organic material (fo =25%), and its bulk density (ρs = 1.4 Mg m−3). What is the mass of organic (Mo) and mineral material (Mm) contained in one cubic metre of this soil?
+
+
+```{r}
+
+```
+
+Q13. Using the values of specific heat for organic (co) and mineral (cm) given in the table of Lecture 10, slide 8, calculate the composite heat capacity (Cs) for the dry soil in Question 12.
+
+
+```{r}
+
+```
