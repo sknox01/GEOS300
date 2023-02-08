@@ -1,0 +1,90 @@
+---
+title: "Study Questions - Lecture 12"
+author: "Your name here"
+date: "2023-02-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# <center>University of British Columbia, Vancouver</center> 
+## <center>GEOB 300 - Microscale Weather and Climate</center>  
+### <center>Student Name, Student ID</center> 
+```
+
+Q1. How does the amplitude and phase lag of soil temperatures in a completely dry soil depend on (a) depth, and (b) soil organic matter content (at constant porosity)?
+
+
+```{r}
+# Enter anwer here an convert to Markdown after
+```
+
+Q2. Calculate the angular frequency for a diurnal ωd and an annual temperature wave ωa.
+
+
+```{r}
+
+```
+
+Q3. Calculate the daily and annual damping depth D for a mineral soil with a thermal diffusivity κ = 5.0×10−7 m2 s−1. How do you interpret your results?
+
+
+```{r}
+
+```
+
+
+```{r}
+# How do you interpret your results? Enter answer here then convert to markdown
+```
+
+Q4. For the same soil, calculate when the soil temperature reaches its maximum at 5 cm if the maximum surface temperature is measured at 13:00?
+
+
+```{r}
+# the hms library will be helpful here
+library(hms)
+
+t1 <- as_hms("13:00:00")
+
+z1 <- 
+z2 <- 
+
+# Calculate ∆t (dt)
+dt <- 
+dt <- hms(as.numeric(dt))
+
+# Find when the soil temperature reaches its maximum at 5 cm
+t2 <- dt+t1
+t2 <- hms(as.numeric(t2))
+         
+# Display output
+cat("Soil temperature reaches its maximum at 5 cm at: ", as.character(t2), "\n")        
+```
+
+Q5. In a different soil, you measure the daily maximum 5-cm soil temperature at 15:00 and the maximum 15-cm soil temperature at 18:00. Assume homogeneous soil properties and sinusoidal waves, and calculate the soil’s thermal diffusivity κ.
+
+
+```{r}
+# the hms library will be helpful here too
+z1 <- 
+z2 <- 
+
+t1 <- as_hms("15:00:00")
+t2 <- as_hms("18:00:00")
+
+dt <- t1-t2
+
+# hint went estimating thermal diffusivity, use as.numeric(dt)
+
+```
+
+Q6. Briefly compare the temperature regimes of mineral and organic soils.
+
+
+```{r}
+# Enter answer here then convert to markdown
+```
