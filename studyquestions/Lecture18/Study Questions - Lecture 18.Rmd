@@ -1,0 +1,198 @@
+---
+title: "Study Questions - Lecture 18"
+author: "Your name here"
+date: "2023-02-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Q1. During an hour, you measure air temperature T every 10 minutes according the table below. Calculate the terms below:
+
+| Minutes | T (Celsius) | 
+| :------ |------------:| 
+| 10      | 12.6        |
+|20       | 11.2        |
+|30       | 11.9        |
+|40       | 13.1        |
+|50       | 12.0        |
+|60       | 11.8        |
+
+
+```{r}
+#Fi{r}st create dataframe
+minutes <- c(10,20,30,40,50,60)
+temperature <- c(12.6,11.2,11.9,13.1,12.0,11.8)
+data <- data.frame(minutes,temperature)
+
+# Now display output
+head(data)
+```
+
+a) Calculate $\overline{T}$
+
+
+```{r}
+# You can calcute average temperature using the equation on slide 7 in Lecture 18 or using the the mean function
+
+# Let's try calculating average temperature using the equation on slide 7 in Lecture 18
+Tbar <- 1/6*(12.6+11.2+11.9+13.1+12.0+11.8)
+
+# Display output
+cat("average temperature is: ", Tbar, intToUtf8(176), "C", "\n")
+
+# Now let's calculate average temperature using the average function
+Tbar2 <- mean(data$temperature)
+
+# Display output
+cat("average temperature is: ", Tbar2, intToUtf8(176), "C", "\n")
+
+# We can see that the results are the same
+```
+
+b) T' at 40 min
+
+
+```{r}
+# First we need to calculate deviations in temperature
+data$Tprime <- data$temperature-Tbar
+
+# Display output
+head(data)
+
+# From this table you can estimate T' at 40 min
+cat("T' at 40 min is: ", data$Tprime[4], intToUtf8(176), "C", "\n") #data$Tprime[4] mean you're taking the 4th value of Tprime 
+
+```
+
+c) T$^{'2}$ at 20 min
+
+
+```{r}
+# Again we can estimate that from the dataframe above (i.e. you'll need to squate T' at 20 min)
+Tprime_squared <- data$Tprime[2]^2
+
+# Display output
+cat("T'2 at 30 min is: ", Tprime_squared, intToUtf8(176), "C2", "\n") #data$Tprime[4] mean you're taking the 4th value of Tprime 
+```
+
+d) $\overline{T^{'}}$
+
+
+```{r}
+# By default this term should be zero, but we can check this using the following
+Tprime_mean <- 1/6*sum(data$Tprime)
+Tprime_mean <- mean(data$Tprime)
+
+# Display output
+cat("The average deviation in T is: ", round(Tprime_mean,10), intToUtf8(176), "C", "\n")
+```
+
+e) $\overline{T^{'2}}$
+
+
+```{r}
+# This is the the variance of the time series of T. We can calculate it as follows
+Tprime_squared_mean <- 1/6*sum(data$Tprime^2)
+Tprime_squared_mean <- mean(data$Tprime^2)
+
+# Display output
+cat("the the variance of the time series of T is: ", round(Tprime_squared_mean,2), intToUtf8(176), "C2", "\n")
+```
+
+f) $\overline{T^{'}}^{2}$
+
+
+```{r}
+# Again by default this term should be zero, but we can check this using the following
+Tprime_mean_squared <- mean(data$Tprime)^2
+
+# Display output
+cat("mean T' is: ", round(Tprime_mean_squared,10), intToUtf8(176), "C", "\n")
+```
+
+Q2. See the handout for Study Questions - Lecture 18. This is best solved by hand
+
+Q3. Calculate the following parameters if $\overline{u}$ = 4 m s$^{-1}$, $\overline{v}$ = 0 m s$^{-1}$, $\overline{w}$ = 0 m s$^{-1}$, $\sigma_{u}$ = 0.4 m s$^{-1}$, $\sigma_{v}$ = 0.2 m s$^{-1}$, and  $\sigma_{w}$ = 0.1 m s$^{-1}$
+
+a) I$_{u}$
+
+
+```{r}
+# We can calculate the turbulence intensity as follows:
+# First define the standard deviation
+sigma_u <- 0.4
+
+# Next estimate M
+ubar <- 4
+vbar <- 0
+wbar <- 0
+M <- sqrt(ubar^2+vbar^2+wbar^2)
+
+# Now you can calculate the turbulence intensity
+Iu <- sigma_u/M
+
+# Display output
+cat("Iu is: ", round(Iu,3), "\n")
+```
+
+b) I$_{w}$
+
+
+```{r}
+# define the standard deviation for w
+sigma_w <- 0.1
+
+# Next calculate the turbulence intensity
+Iw <- sigma_w/M
+
+# Display output
+cat("Iw is: ", round(Iw,3), "\n")
+```
+
+c) $\overline{w^{'2}}$
+
+
+```{r}
+# Estimate this term using the standard deivation for w
+variance_w <- sigma_w^2
+
+# Display output
+cat("The variance of w is: ", round(variance_w,3), "m2/s2", "\n")
+```
+
+d) $\overline{u^{'2}}$+$\overline{v^{'2}}$+$\overline{w^{'2}}$
+
+
+```{r}
+# Estimate this value using a similar calculation to that shown above
+sigma_v <- 0.2
+term <- sigma_u^2+sigma_v^2+sigma_w^2
+
+# Display output
+cat("This is equal to: ", round(term,3), "m2/s2", "\n")
+```
+
+ e) MKE/m
+
+
+```{r}
+# We can calculate mean kinetic energy (MKE) per unit mass (m) if we know the mean flow in the u,v, and w directions (which are define above)
+MKE <- 1/2*(ubar^2+vbar^2+wbar^2)
+
+# Display output
+cat("The mean kinetic energy (MKE) per unit mass is: ", round(MKE,3), "m2/s2", "\n")
+```
+
+d) $\overline{e}$
+
+
+```{r}
+# The turbulent kinetic energy per unit mass can be estimate as:
+e <- 1/2*term
+
+# Display output
+cat("The turbulent kinetic energy per unit mass is: ", round(e,3), "m2/s2", "\n")
+```
