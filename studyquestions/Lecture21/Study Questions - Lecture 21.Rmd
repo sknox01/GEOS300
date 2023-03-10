@@ -1,0 +1,55 @@
+---
+title: "Study Questions - Lecture 21"
+author: "Your name here"
+date: "2023-02-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Q1. At a tower you measure the following average air temperatures: T1 = 15 $^{\circ}$C and T2 = 10 $^{\circ}$C, at heights z1 = 1 m and z2 = 11 m. Calculate
+$\Delta\overline{T}$/$\Delta$z and $\Delta\overline{\theta}$/$\Delta$z.
+
+
+```{r}
+
+```
+
+Q2. Redo the calculation for air temperatures T1 = 10.0 $^{\circ}$C and T2 = 11.0 $^{\circ}$C, at heights z1 = 1 m and z2 = 6 m.
+
+
+```{r}
+
+```
+
+Q3. For question 1 and 2 calculate Q$_{H}$ using the K-Theory. Given is the eddy diffusivity K$_{H}$ = 0.2 m$^{2}$ s$^{-1}$.
+
+
+```{r}
+
+```
+
+Q4. At the tower you measure a carbon dioxide concentration of $\overline{\rho_{c1}}$ = 14 mmol m$^{-3}$ and $\overline{\rho_{c2}}$ = 15 mmol m$^{-3}$, at heights z1 = 1 m and z2 = 11 m. Calculate $\Delta$$\overline{\rho_{c}}$/$\Delta$z and the mass flux density of carbon dioxide using the K-Theory and the Reynolds analogy.
+
+
+```{r}
+
+```
+
+Q5. At the tower you measure also measure absolute humidity of $\overline{\rho_{v1}}$ =
+5 g m$^{-3}$ and $\overline{\rho_{v2}}$ = 4 g m$^{-3}$, at the same heights z1 = 1 m and z2 = 11 m. Calculate $\Delta$$\overline{\rho_{v}}$/$\Delta$z and the mass 
+flux density of water vapour E (in g m$^{-2}$ s$^{-1}$) using the K-Theory and Reynolds analogy.
+
+
+```{r}
+
+```
+
+Q6. Calculate Q$_{E}$ from question 5.
+
+
+```{r}
+
+```
