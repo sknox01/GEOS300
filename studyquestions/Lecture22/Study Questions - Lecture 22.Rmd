@@ -1,0 +1,56 @@
+---
+title: "Study Questions - Lecture 22"
+author: "Your name here"
+date: "2023-03-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# <center>University of British Columbia, Vancouver</center> 
+## <center>GEOB 300 - Microscale Weather and Climate</center>  
+### <center>Student Name, Student ID</center> 
+```
+
+Q1. You measure a covariance $\overline{w'T'}$ = -0.031 m s$^{-1}$ K. Average air temperature is 10 $^\circ$C. Calculate Q$_{H}$. Is this a day-time or night-time situation?
+
+
+```{r}
+
+```
+
+Q2. You measure a covariance $\overline{w'\rho_{v}'}$ = 1.73 x 10$^{-4}$ kg m$^{-2}$ s$^{-1}$. $\rho_{v}$ is the
+water vapour density in kg m$^{-3}$. Average air temperature is 30 $^\circ$C. Calculate Q$_{E}$.
+
+
+```{r}
+
+```
+
+Q3. Determine the Bowen ratio $\beta$ if $\overline{w'T'}$ = 0.121 m s$^{-1}$ K and $\overline{w'\rho_{v}'}$ = 1.21 x 10$^{-4}$ kg m$^{-2}$ s$^{-1}$. Average air temperature is 20 $^\circ$C.
+
+
+```{r}
+
+```
+
+Q4. Given is Q$_{E}$ = 240 W m$^{-2}$ at 20 $^{\circ}$C air temperature. Determine the
+covariance $\overline{w'q'}$, where $q$ is the specific humidity (in g water vapour
+per kg air ,i.e. g kg$^{-1}$).
+
+
+```{r}
+
+```
+
+Q5. Over a rice paddy you measure a covariance between vertical wind and
+methane concentration $\rho$$_{CH4}$ in $\mu$g m$^{-3}$ of $\overline{w'\rho_{CH4}'}$ = 10 m s$^{-1}$ $\mu$g m$^{-3}$.
+Determine the mass fux density between surface and atmosphere.
+
+
+```{r}
+
+```
