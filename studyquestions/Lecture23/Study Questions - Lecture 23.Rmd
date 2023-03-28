@@ -1,0 +1,80 @@
+---
+title: "Study Questions - Lecture 23"
+author: "Your name here"
+date: "2023-03-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# <center>University of British Columbia, Vancouver</center> 
+## <center>GEOB 300 - Microscale Weather and Climate</center>  
+### <center>Student Name, Student ID</center> 
+```
+
+Q1. What are the units of the terms for mechanical production rate and the thermal production rate of turbulence?
+
+
+```{r}
+
+```
+
+Q2. Show that the units of the terms for mechanical and thermal production rate match the units of turbulent kinetic energy (TKE) produced per time and unit mass.
+
+
+```{r}
+
+```
+
+Q3. Given the following terms, calculate the mechanical, thermal, and total production rate of TKE per unit mass: $\overline{w'T'}$ = 0.30 K m s$^{−1}$, $\overline{u'w'}$ = 0.52 m$^{2}$ s$^{−2}$, T = 304.1 K and a wind gradient of $\Delta$u/$\Delta$z = 0.07 m s$^{−1}$ m$^{−1}$.
+
+
+```{r}
+# mechanical
+
+
+# Thermal
+
+
+
+# Total
+
+```
+
+Q4. What is the Richardson flux number (Rf) in this situation?
+
+
+```{r}
+
+```
+
+Q5. What is the turbulence regime in this situation? What is the dynamic stability (stable, neutral, unstable)?
+
+
+```{r}
+
+```
+
+Q6. Calculate the height above ground in the surface layer, where the mechanical production rate and the thermal production rate are equal.
+
+
+```{r}
+
+```
+
+Q7. What is the value of the dynamic stability parameter $\zeta$ in this situation at a height z = 10 m?
+
+
+```{r}
+
+```
+
+Q8. What is the dynamic stability (stable, neutral, unstable) determined through $\zeta$ and does this match the dynamic stability determined through Rf?
+
+
+```{r}
+
+```
